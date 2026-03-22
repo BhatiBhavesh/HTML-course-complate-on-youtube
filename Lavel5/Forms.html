@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>html form</legend>
+
+        <form action="/contact-me">
+            <label for="userName">UserName:</label>
+            <input type="text" id="email" placeholder="email" required="true"><br><br>
+
+            <label for="user_password">Password:</label>
+            <input type="password" id="user_password"><br><br>
+
+            <label for="date">Date:</label>
+            <input type="date"><br><br>
+
+            <label for="file">File:</label>
+            <input type="file"><br><br>
+
+            <label for="pricerange">Price range:</label>
+            <input type="range"><br><br>
+
+            <label for="file">File:</label>
+            <input type="file"><br><br>
+
+            <label for="button">Poke me:</label>
+            <input type="button" value="poked"><br><br>
+            <table>
+                <tr>
+                    <td><label for="male">Male:</label>
+                        <input type="radio" id="male" name="gender" value="male">
+                    </td>
+
+                    <td>
+                        <label for="female">female:</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                    </td>
+
+                    <td>
+                        <label for="other">other:</label>
+                        <input type="radio" id="other" name="gender" value="other">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="C">C</label>
+                        <input type="checkbox" name="lang" id="C" value="C">
+                    </td>
+
+                    <td>
+                        <label for="Java">Java</label>
+                        <input type="checkbox" name="lang" id="Java" value="Java">
+                    </td>
+
+                    <td>
+                        <label for="python">python</label>
+                        <input type="checkbox" name="lang" id="python" value="python">
+                    </td>
+                </tr>
+            </table>
+
+            <!-- iframe -->
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/rklidcZ-aLU?si=7dneqBufU_jFKWKf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+             <iframe width="400" height="200" src="https://www.instagram.com/reels/DUEEt-riIMH/" frameborder="0"></iframe>
+
+            <!-- dropdown -->
+
+            <br>
+            <label for="country">Select your country</label>
+            <select name="country" id="country">
+                <option value="India">India</option>
+                <option value="US">US</option>
+                <option value="UK">UK</option>
+                <option value="Other">Other</option>
+            </select><br><br>
+
+            <label for="story">story:</label><br>
+            <span><textarea rows="10" cols="40" name="story" id="story">Plese write a story</textarea></span>
+
+            <iframe src="" frameborder="0"></iframe>
+
+            <br><br>
+            <input type="submit">
+        </form>
+    </fieldset>
+</body>
+
+</html>

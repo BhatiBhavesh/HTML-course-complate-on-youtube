@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Form</title>
+    <style>
+        /* Fieldset ko relative banaya taaki button iske hisaab se move kare */
+        .contact-fieldset {
+            position: relative;
+            padding-bottom: 30px; /* Niche thodi extra jagah */
+            border: 2px solid #333;
+            width: fit-content;
+            padding-right: 20px;
+        }
+
+        /* Submit button ko styling aur positioning di */
+        .submit-container {
+            position: absolute;
+            bottom: -12px; /* Isse button niche wali line par aa jayega */
+            left: 20px;    /* Aap isse 50% karke center bhi kar sakte hain */
+            background-color: white; /* Line ko chhupane ke liye background color zaroori hai */
+            padding: 0 5px;
+        }
+
+        input[type="submit"] {
+            cursor: pointer;
+            padding: 5px 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <fieldset class="contact-fieldset">
+            <legend><b>Contact-US</b></legend>
+
+            <label for="name"><b>Name:</b></label><br>
+            <input type="text" id="name"><br><br>
+
+            <label for="mobile-number"><b>Phone no.:</b></label><br>
+            <input type="tel" id="mobile-number" pattern="[0-9]{10}" maxlength="10" required><br><br>
+
+            <label for="e-mail"><b>Enter your e-mail:</b></label><br>
+            <input type="email" id="e-mail" required><br><br>
+
+            <label for="message"><b>Enter your message:</b></label><br>
+            <textarea name="message" id="message" rows="5" cols="40">Enter why you contact us</textarea>
+            
+            <div class="submit-container">
+                <input type="submit" value="Submit">
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+</html>
